@@ -1,21 +1,84 @@
 .shop-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 
-  .shop-grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-  }
+.shop-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 250px;
+}
 
-  .shop-item {
-    margin: 10px;
-    text-align: center;
-  }
+.shop-item {
+  margin: 10px;
+  text-align: center;
+}
 
-  .shop-item img {
-    border-radius: 50%;  
-  }
-  
+.shop-item img {
+  border-radius: 20%;
+}
+
+.shop-detail {
+  padding: 20px;
+}
+
+.shop-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.shop-detail-image {
+  text-align: center;
+  border-radius: 30%;
+}
+
+.shop-info {
+  padding: 20px;
+}
+/* サムネイルフォーカス時 */
+.image-hover:hover {
+  border-radius: 20%;
+  border: 2px solid red;
+}
+
+.focused {
+  border-radius: 20%;
+  border: 2px solid red;
+}
+
+.result-button:hover {
+  border: 2px solid red;
+}
+
+a {
+  text-decoration: none;
+}
+/* ビッグピクチャ部分 */
+.focused-image-container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+/* ビッグピクチャ店名部分 */
+.focused-image-caption {
+  margin-top: 0px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.focused-image-wrapper {
+  display: flex;
+}
+
+.focused-image-caption-container {
+  margin-right: 10px;
+  flex-direction: row-reverse;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
